@@ -144,22 +144,29 @@
       <section class="bspacer" id="contact-section">
         <h1>Contact Me!</h1>
         <form id="signupForm">
-            <fieldset>
-                <legend>Enter your details</legend>
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" required>
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="phone">Phone:</label>
-                <input type="number" id="phone" type="tel" name="phone">                    
-                <label for="age">Age:</label>
-                <input type="number" id="age" name="age" min="1" required>
-                <button type="submit">Submit</button>
-            </fieldset>
+          <fieldset>
+            <legend>Enter your details</legend>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+      
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+      
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="phone">Phone:</label>
+            <input type="number" id="phone" name="phone">
+            <span id="phoneErrorSpan"></span> <!-- Added this -->
+      
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" required>
+            <span id="ageErrorSpan"></span> <!-- And this -->
+      
+            <button type="submit">Submit</button>
+          </fieldset>
         </form>
-    </section>
+      </section>
       <ul id="result-view"></ul>
       <section id="footer-section">
         <p class="body-font">© 2023 Hiwot Wonago. All rights reserved.</p>
